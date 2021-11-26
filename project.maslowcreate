@@ -157,7 +157,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "atoms/174513/722649GitHubMolecule"
+                    "ioValue": "atoms/174513/199071Add-BOM-Tag"
                 },
                 {
                     "name": "xDist",
@@ -172,6 +172,27 @@
                     "ioValue": 0
                 }
             ]
+        },
+        {
+            "atomType": "Add-BOM-Tag",
+            "name": "Add BOM Tag",
+            "x": 0.27711640211640215,
+            "y": 0.7371794871794872,
+            "uniqueID": 199071,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/174513/722649GitHubMolecule"
+                }
+            ],
+            "BOMitem": {
+                "BOMitemName": "M3 Bolt",
+                "numberNeeded": 1,
+                "costUSD": 0.1,
+                "source": "www.example.com",
+                "totalNeeded": 1,
+                "radius": 0.015384615384615385
+            }
         },
         {
             "atomType": "ShrinkWrap",
@@ -272,10 +293,6 @@
                     "ioValue": 10
                 },
                 {
-                    "name": "3D shape 3",
-                    "ioValue": 10
-                },
-                {
                     "name": "3D shape 4",
                     "ioValue": 10
                 }
@@ -334,17 +351,10 @@
         },
         {
             "ap1Name": "Geometry",
-            "ap2Name": "3D shape 3",
-            "ap2Primary": false,
-            "ap1ID": 722649,
-            "ap2ID": 971724
-        },
-        {
-            "ap1Name": "Geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": 722649,
-            "ap2ID": 940764
+            "ap2ID": 199071
         },
         {
             "ap1Name": "geometry",
@@ -352,6 +362,13 @@
             "ap2Primary": false,
             "ap1ID": 940764,
             "ap2ID": 561374
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 199071,
+            "ap2ID": 940764
         },
         {
             "ap1Name": "geometry",
