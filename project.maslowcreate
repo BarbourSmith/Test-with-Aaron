@@ -141,8 +141,8 @@
         {
             "atomType": "GitHubMolecule",
             "name": "M3x30 Bolt",
-            "x": 0.1712962962962963,
-            "y": 0.7371794871794872,
+            "x": 0.09528301886792452,
+            "y": 0.6923076923076923,
             "uniqueID": 722649,
             "projectID": "253144023",
             "ioValues": [],
@@ -151,8 +151,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.3994708994708995,
-            "y": 0.657051282051282,
+            "x": 0.33113207547169815,
+            "y": 0.6282051282051282,
             "uniqueID": 940764,
             "ioValues": [
                 {
@@ -176,13 +176,13 @@
         {
             "atomType": "Add-BOM-Tag",
             "name": "Add BOM Tag",
-            "x": 0.27711640211640215,
-            "y": 0.7371794871794872,
+            "x": 0.27358490566037735,
+            "y": 0.7467948717948718,
             "uniqueID": 199071,
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "atoms/174513/722649GitHubMolecule"
+                    "ioValue": "atoms/174513/699782Color"
                 }
             ],
             "BOMitem": {
@@ -193,6 +193,20 @@
                 "totalNeeded": 1,
                 "radius": 0.015384615384615385
             }
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.1716981132075472,
+            "y": 0.8493589743589743,
+            "uniqueID": 699782,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/174513/722649GitHubMolecule"
+                }
+            ],
+            "selectedColorIndex": 0
         },
         {
             "atomType": "ShrinkWrap",
@@ -237,6 +251,23 @@
             "closedSelection": 0
         },
         {
+            "atomType": "Tag",
+            "name": "Add Tag",
+            "x": 0.39245283018867927,
+            "y": 0.8525641025641026,
+            "uniqueID": 951969,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/174513/940764Move"
+                },
+                {
+                    "name": "tag",
+                    "ioValue": "Tag String"
+                }
+            ]
+        },
+        {
             "atomType": "Stl",
             "name": "Stl",
             "x": 0.8584656084656084,
@@ -252,8 +283,8 @@
         {
             "atomType": "GitHubMolecule",
             "name": "Rotational Pattern",
-            "x": 0.5013227513227514,
-            "y": 0.8365384615384615,
+            "x": 0.6094339622641509,
+            "y": 0.7243589743589745,
             "uniqueID": 561374,
             "projectID": "209940609",
             "ioValues": [
@@ -269,6 +300,23 @@
             "simplify": false
         },
         {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.7783018867924528,
+            "y": 0.7788461538461539,
+            "uniqueID": 971724,
+            "ioValues": [
+                {
+                    "name": "3D shape 2",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 4",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9867724867724867,
@@ -282,19 +330,19 @@
             ]
         },
         {
-            "atomType": "Assembly",
-            "name": "Assembly",
-            "x": 0.7824074074074073,
-            "y": 0.7884615384615384,
-            "uniqueID": 971724,
+            "atomType": "ExtractTag",
+            "name": "Extract Tag",
+            "x": 0.9028301886792452,
+            "y": 0.8653846153846154,
+            "uniqueID": 233203,
             "ioValues": [
                 {
-                    "name": "3D shape 2",
-                    "ioValue": 10
+                    "name": "geometry",
+                    "ioValue": "atoms/174513/971724Assembly"
                 },
                 {
-                    "name": "3D shape 4",
-                    "ioValue": 10
+                    "name": "tag",
+                    "ioValue": "Tag String"
                 }
             ]
         }
@@ -354,14 +402,14 @@
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": 722649,
-            "ap2ID": 199071
+            "ap2ID": 699782
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape",
-            "ap2Primary": false,
+            "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": 940764,
-            "ap2ID": 561374
+            "ap2ID": 951969
         },
         {
             "ap1Name": "geometry",
@@ -369,6 +417,13 @@
             "ap2Primary": true,
             "ap1ID": 199071,
             "ap2ID": 940764
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 699782,
+            "ap2ID": 199071
         },
         {
             "ap1Name": "geometry",
@@ -385,6 +440,13 @@
             "ap2ID": 971724
         },
         {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape",
+            "ap2Primary": false,
+            "ap1ID": 951969,
+            "ap2ID": 561374
+        },
+        {
             "ap1Name": "Geometry",
             "ap2Name": "3D shape 4",
             "ap2Primary": false,
@@ -397,6 +459,13 @@
             "ap2Primary": false,
             "ap1ID": 971724,
             "ap2ID": 259855
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 971724,
+            "ap2ID": 233203
         }
     ],
     "fileTypeVersion": 1,
